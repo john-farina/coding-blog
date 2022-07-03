@@ -1,4 +1,4 @@
-### **_codingBlog_**
+### _codingBlog_
 
 ---
 

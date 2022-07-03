@@ -141,12 +141,30 @@ footer {
     margin-left: 30px;
 }
 .pageContent {
+    position: relative;
     background-color: rgba(0, 0, 0, 4%);
     width: 380px;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 10px;
+}
+.pageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    width: 50px;
+    height: 20px;
+    border-style: solid;
+    border-color: var(--offBlackText);
+    background-color: white;
+    color: var(--offBlackText);
+    border-radius: 2px;
+    font-size: 10px;
 }
 
 .blogButton {

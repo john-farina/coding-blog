@@ -32,6 +32,17 @@ function createBlogPost(title, time, blogPost) {
     content.innerHTML = blogPost;
     pageContent.appendChild(content);
 
+    const pageButton = document.createElement('button');
+    pageButton.classList.add('pageButton');
+    pageButton.innerHTML = 'BACK';
+
+    pageButton.addEventListener('click', () => {
+        blogPage.style.display = 'none';
+        blogContainer.style.overflowY = 'scroll';
+        blogOpen = false;
+    });
+    pageContent.appendChild(pageButton);
+
     blogPage.appendChild(pageTitle);
     blogPage.appendChild(pageDate);
     blogPage.appendChild(pageContent);

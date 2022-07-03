@@ -24,7 +24,7 @@ function createBlogPost(title, time, blogPost) {
     pageTitle.innerHTML = title;
     const pageDate = document.createElement('p');
     pageDate.classList.add('pageDate');
-    pageDate.innerHTML = time;
+    pageDate.innerHTML = '-' + time;
 
     const pageContent = document.createElement('div');
     pageContent.classList.add('pageContent');
@@ -94,3 +94,4 @@ createBlogPost(
     '8/8/2090',
     `maybe one day ill be pro maybe one day`
 );
+createBlogPost('Blog1', '7/3/2022', 'i added this one so u can scroll wow');

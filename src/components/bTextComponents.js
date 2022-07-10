@@ -8,7 +8,7 @@ export function BImage({ image, desc, className }) {
     return (
         <>
             <img
-                alt="this is a image lol"
+                alt="a blog photograph"
                 src={image}
                 className={'bImage ' + className}
             />

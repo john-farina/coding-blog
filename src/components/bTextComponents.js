@@ -7,7 +7,11 @@ export function BHeader2({ text, className }) {
 export function BImage({ image, desc, className }) {
     return (
         <>
-            <img src={image} className={'bImage ' + className} />
+            <img
+                alt="this is a image lol"
+                src={image}
+                className={'bImage ' + className}
+            />
             <div className="bImageDesc">
                 <p>{desc}</p>
             </div>

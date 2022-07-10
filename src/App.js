@@ -4,12 +4,18 @@ import BlogContents from './components/BlogContents';
 import { useState } from 'react';
 
 function App() {
-    const [blogs, setBlogs] = useState([
+    const [blogs] = useState([
         {
             id: 1,
             title: 'New Blog!',
             contents:
-                'this is some content for my new blog wow i am a pro at react just kidding',
+                'this is some content for my new blog wow i am a pro at react',
+            test: (
+                <>
+                    <h1 className="bHeader2">nice</h1>
+                    <p className="bText">this is JSX </p>
+                </>
+            ),
             date: new Date(),
         },
         {
@@ -24,7 +30,7 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <BlogContents />
+            <BlogContents blog={blogs} />
         </div>
     );
 }

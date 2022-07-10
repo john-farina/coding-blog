@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { BHeader1 } from './bTextComponents';
 
-function BlogCard() {
+function BlogCard({ title, info, blogContent }) {
     const [pageStyle, setPageStyle] = useState({
         display: 'none',
     });
@@ -20,14 +21,18 @@ function BlogCard() {
     return (
         <>
             <div onClick={openBlogPage} className="blogCard">
-                <h2 className="blogTitle">Hello Blog World</h2>
+                <h2 className="blogTitle">{title}</h2>
                 <div className="blogInfo">
-                    <h4 className="infoText">11/11/22-</h4>
-                    <h4 className="infoText">9:17PM</h4>
+                    <h4 className="infoText">{info}</h4>
+                    <h4 className="infoText"></h4>
                 </div>
             </div>
             <div style={pageStyle} className="blogPage">
-                <p>hello this is some text blah blah blah</p>
+                <BHeader1
+                    className={'bTextUnderline bTextItalic'}
+                    text={title}
+                />
+                {blogContent}
             </div>
         </>
     );

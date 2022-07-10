@@ -1,5 +1,6 @@
 import BlogCard from './BlogCard';
 import { BHeader1 } from './bTextComponents';
+import { useState } from 'react';
 
 const stuff = (
     <>
@@ -7,12 +8,13 @@ const stuff = (
     </>
 );
 
-function BlogContents({ blog }) {
+function BlogContents({ blog, changeScroll, style }) {
     return (
-        <div className="BlogContents">
+        <div style={style} className="BlogContents">
             {blog.map((item) => {
                 return (
                     <BlogCard
+                        changeBodyScroll={changeScroll}
                         key={item.id}
                         title={item.title}
                         info={item.date.toString()}

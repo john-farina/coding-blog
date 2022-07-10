@@ -20,6 +20,7 @@ function BlogContents({ blog }) {
                     />
                 );
             })}
+
             <BlogCard
                 title="Hello Blog"
                 info="11/11/22 - 10:10pm"

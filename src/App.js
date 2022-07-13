@@ -10,12 +10,6 @@ function App() {
             title: 'New React Blog!',
             contents:
                 '   this will be my first post on my blog wow, i am creating it still and its pretty tricky with react. im hoping once i get better it will start to get easy  ',
-            test: (
-                <>
-                    <h1 className="bHeader2">nice</h1>
-                    <p className="bText">this is JSX </p>
-                </>
-            ),
             date: new Date(),
         },
         {
